@@ -1,5 +1,5 @@
 # Address-sanitizer library
-ASAN_FLAGS := -lasan
+ASAN_FLAGS := -fsanitize=address
 ifneq ($(OS),Windows_NT)
 	UNAME_S := $(shell uname -s)
 	ifeq ($(UNAME_S),Darwin)
