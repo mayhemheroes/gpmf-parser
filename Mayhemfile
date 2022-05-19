@@ -1,0 +1,8 @@
+project: rnshah9/gpmf-parser
+target: gpmf-parser
+tests:
+  - file://samples/Fusion.mp4
+
+cmds:
+  - cmd: /repo/demo/gpmfdemo @@
+    filepath: /test.mp4
