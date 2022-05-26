@@ -1,5 +1,5 @@
 project: rnshah9/gpmf-parser
-target: gpmf-parser
+target: gpmfdemo
 tests:
   - file://samples/Fusion.mp4
 
