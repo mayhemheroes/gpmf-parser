@@ -4,7 +4,6 @@ testsuite:
   - file://samples/Fusion.mp4
 
 cmds:
-  - cmd: /repo/demo/gpmfdemo /test.mp4
-    filepath: /test.mp4
+  - cmd: /gpmfdemo @@
     env:
       DISABLE_SMOKETEST: '1'
