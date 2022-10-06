@@ -5,7 +5,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
 
 COPY . /repo
 WORKDIR /repo/demo
-RUN make -j8
+RUN make -j8 ASAN_FLAGS=-fsanitize=address
 
 FROM ubuntu:20.04 as package
 RUN apt-get update
